@@ -30,7 +30,10 @@
 
 .home_container a {
     text-decoration: none;
-    color: inherit;;
-    width: fit-content;
     margin-top: 20px;
+    color: hsl(358, 89%, 34%);
+}
+
+.home_container a:hover {
+    color: hsl(60, 4%, 58%);
 }

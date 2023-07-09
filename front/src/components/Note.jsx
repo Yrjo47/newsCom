@@ -1,12 +1,13 @@
 import React from 'react'
 import '../styles/Note.css'
 
-const Note = () => {
+const Note = (props) => {
+
   return (
     <article className='note'>
-        <h2 className="note_header">someTitle</h2>
-        <p className="note_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, illo.</p>
-        <p className="note_date">01.01.2001</p>
+        <h2 className="note_header">{props.title}</h2>
+        <p className="note_content">{props.text}</p>
+        <p className="note_date">{props.date}</p>
     </article>
   )
 }

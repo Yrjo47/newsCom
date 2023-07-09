@@ -49,7 +49,7 @@
     font-size: 1.25rem;
     padding: 0.5rem;
     margin-top: 8px;
-    border: 2px solid hsl(60, 4, 58);
+    border: 2px solid hsl(60, 4%, 58%);
 }
 
 .form_button {
@@ -69,4 +69,48 @@
     background-color: hsl(0, 0%, 100%);
     color: hsl(358, 89%, 34%);
     border: 2px solid hsl(358, 89%, 34%);
+}
+
+.table_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.getData_button{
+    width: fit-content;
+    height: 56px;
+    color: hsl(358, 89%, 34%);
+    cursor: pointer;
+    font-weight: 600;
+    align-self: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.db_table {
+    margin: 40px 0px;
+    max-width: 600px;
+    width: 80%;
+    table-layout: fixed;
+    display: none;
+}
+
+.visible{
+    display: table;
+}
+
+thead{
+    font-weight: 600;
+}
+
+table, tr, td {
+    border: 2px solid hsl(0, 0%, 0%);
+    border-collapse: collapse;
+    color: hsl(0, 0%, 0%);
+}
+
+td {
+    padding: 12px;
+    word-wrap: break-word;
 }
