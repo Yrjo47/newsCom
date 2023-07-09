@@ -1,0 +1,2 @@
+# newsCom
+none
