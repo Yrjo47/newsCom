@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom';
 import '../styles/Feedback.css'
 import Axios from 'axios'
 
@@ -11,7 +12,7 @@ const Feedback = () => {
     
     const sendFeedback = () => {
         console.log('sending...');
-        Axios.post('http://localhost:3001/feedback', {
+        Axios.post('https://newscom-api.onrender.com/feedback', {
             name: name,
             address: address,
             email: email,
@@ -21,7 +22,7 @@ const Feedback = () => {
     }
 
     const getFeedback = () => {
-        Axios.get('http://localhost:3001/feedback').then((response) => {
+        Axios.get('https://newscom-api.onrender.com/feedback').then((response) => {
             console.log(response);
             setFeedbackList(response.data);
         });
@@ -53,7 +54,7 @@ const Feedback = () => {
 
     return (
         <div className='feedback'>
-            <a href='/' className="home_button">Home</a>
+            <Link to='/' className="home_button">Home</Link>
             <div className="form_wrapper">
                 <div className="form_container">
                     <h1 className="form_header">Feedback form</h1>
