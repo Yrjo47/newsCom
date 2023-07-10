@@ -31,7 +31,7 @@ const Feedback = () => {
 
     const feedbackMessage = async () => {
         let re = /\S+@\S+\.\S+/;
-        if (re.test(email)){
+        if (re.test(email) === false){
             alert('Not an email');
         }
         else if (name === '' | address === '' | email === ''){
