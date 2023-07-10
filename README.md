@@ -1,2 +1,2 @@
 # newsCom
-none
+https://newscom.onrender.com/
